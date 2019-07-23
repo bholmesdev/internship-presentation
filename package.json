@@ -1,0 +1,12 @@
+{
+  "name": "intern-presentation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^3.0.7"
+  },
+  "scripts": {
+    "start": "mdx-deck pages/deck.mdx"
+  }
+}
