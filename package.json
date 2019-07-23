@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^3.0.7"
+    "mdx-deck": "^3.0.7",
+    "surge": "^0.21.3"
   },
   "scripts": {
-    "start": "mdx-deck pages/deck.mdx"
+    "start": "mdx-deck pages/deck.mdx",
+    "up": "surge --project ./public --domain ben-internship-pres.surge.sh"
   }
 }
