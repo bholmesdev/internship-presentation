@@ -16,6 +16,7 @@ export default ({ children }) => (
         p {
           color: #ddd;
           text-align: center;
+          margin: 0;
         }
 
         a {
