@@ -9,6 +9,6 @@
   },
   "scripts": {
     "start": "mdx-deck pages/deck.mdx",
-    "up": "surge --project ./public --domain ben-internship-pres.surge.sh"
+    "up": "mdx-deck build pages/deck.mdx && surge --project ./public --domain ben-internship-pres.surge.sh"
   }
 }
