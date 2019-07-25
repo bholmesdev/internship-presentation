@@ -43,6 +43,12 @@ export default ({ children }) => (
           line-height: 1.5em;
           text-align: left;
         }
+        hr {
+          width: 100%;
+          border-color: rgb(255, 51, 71);
+          margin-top: 0;
+          margin-bottom: 45px;
+        }
       `}
     />
     <section
