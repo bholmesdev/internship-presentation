@@ -1,8 +1,9 @@
 import { Head, Split, Invert } from "mdx-deck";
 import { css } from '@emotion/core'
-import myTheme from "./theme";
-import Layout from "./Layout";
-export const theme = myTheme;
+import peloTheme from "./theme";
+import Layout, {Center, ButtonLink} from "./Layout";
+import { prism } from 'mdx-deck/themes'
+export const themes = [peloTheme, prism];
 
 <Head>
   <title>Ben's Intern Pres</title>
@@ -13,7 +14,11 @@ export const theme = myTheme;
 
 # My time at Peloton
 
-Ben Holmes
+<Center>
+
+<em>Ben Holmes</em>
+
+</Center>
 
 </Layout>
 
@@ -23,41 +28,25 @@ Ben Holmes
 
 ## A brief "about me"
 
-</Layout>
-
----
-
-<Layout>
-
-### Why I love frontend
-
 ![My team for the BuildGT2 hackathon](https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/55619245_1743945352371970_1453112522864328704_n.jpg?_nc_cat=109&_nc_oc=AQm2QTscWATbXQGPogVpUEKHBwol_bHTWRf2lOxLSku2ri_df18BCbzRsTKmrSW3aX8&_nc_ht=scontent-lga3-1.xx&oh=2515bb1395d887d7be38e9a9cb54ba49&oe=5DABFB28)
 
 </Layout>
 
 ---
 
-<Layout>
+<Invert>
 
-  ## What I wanted out of my internship
+## WHAT I WANTED OUT OF MY INTERNSHIP
 
-</Layout>
+</Invert>
 
 ---
 
 <Layout>
 
-### ✅ Work on a modern frontend stack
+### ✅ Work on a large-scale, modern stack
 
 ![Solid JavaScript array meme](https://files.slack.com/files-pri/T6VL1BSEA-FG8TZ76J0/image_from_ios.jpg)
-
-</Layout>
-
----
-
-<Layout>
-
-### ✅ Be part of a <span style={{fontSize: '1.3em'}}>larger</span> team
 
 </Layout>
 
@@ -73,17 +62,9 @@ Ben Holmes
 
 ---
 
-<Layout>
-
-### ✅ Explore the big city!
-
-</Layout>
-
----
-
 <Invert>
 
-## SO... HOW'S IT BEEN?
+## SO, WHAT DID I DO?
 
 </Invert>
 
@@ -91,9 +72,77 @@ Ben Holmes
 
 <Layout>
 
-### 👍 Writing meaningful code since day 1
+### Wrote a lot of code!
 
 ![So many branches open](https://i.imgur.com/tFHTdUJ.png)
+
+</Layout>
+
+---
+
+<Layout>
+
+### Joined the MISO acquisition team
+
+<Center>
+  
+<em>MISO (/ˈmiːsəʊ/) - <mark>Mi</mark>d Funnel Web Acquisition <mark>So</mark>ftware</em>
+
+<small>In charge of checkout flow, support of iOS app, and commercial sales</small>
+  
+</Center>
+
+<img style={{maxHeight: '500px', width: 'auto'}} src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/miso-soup-horizontal-jpg-1529350400.jpg?crop=0.881xw:0.872xh;0.0918xw,0.0510xh&resize=980:*" />
+
+</Layout>
+
+---
+
+<Layout>
+
+### Jumped into the sprint process 🏃‍
+
+- Agile development
+- Sprint goals
+- Standups
+- Weekly grooming
+- Review and retro
+
+</Layout>
+
+---
+
+<Layout>
+
+### Dove into the PR review process
+
+<Split>
+
+![Slack message for code review](https://i.imgur.com/z1HishX.png)
+
+
+<Center>
+
+Dedicated Slack channel
+
+Follow-up PRs for fixes
+
+<ButtonLink href="https://www.uat.onepeloton.com">UAT testing site</ButtonLink>
+
+</Center>
+
+</Split>
+
+</Layout>
+
+
+---
+
+<Layout>
+
+### Everyone's willing to help 👍 
+
+![Kyle looking excited](https://i.imgur.com/FSQKsHs.jpg)
 
 </Layout>
 
@@ -112,30 +161,146 @@ Ben Holmes
 
 ---
 
+<Invert>
+
+## MILESTONES
+
+</Invert>
+
+---
+
 <Layout>
 
-### 👍 Everyone's willing to help
-
-![Kyle looking excited](https://i.imgur.com/FSQKsHs.jpg)
+### ✅ Promo code validation
 
 </Layout>
 
 ---
 
-
 <Layout>
 
-### 👍 Part of a larger project
+### ✅ Slow but steady Contentful migration
 
 <Split>
 
-![](https://i.imgur.com/CjEEA39.png)
+![Stale meme](https://i.imgur.com/kiKuXlb.jpg)
 
-...which is actually [getting deployed!](https://www.uat.onepeloton.com/careers)
+Makes a designer's life easier!
+
+...but means many, _many_ refactoring tickets
 
 </Split>
 
 </Layout>
+
+---
+
+<Layout>
+
+### ✅ Variations and toggles
+
+- Optimizely for A/B testing
+- Toggles for temporary promos and new features
+- _Hundreds of different experiences_
+
+<Center>
+
+<ButtonLink href="https://www.uat.onepeloton.com/register/free-trial/600mass">My first project</ButtonLink>
+
+</Center>
+
+</Layout>
+
+---
+
+<Layout>
+
+### ✅ Jump started checkout refactoring
+
+</Layout>
+
+---
+
+<Invert>
+
+## NEW PROJECT, NEW TEAM
+
+</Invert>
+
+---
+
+<Layout>
+
+### Joined the MISO acquisition team
+
+<Center>
+  
+<em>SOBA (/ˈsoʊbə/) - <mark>S</mark>pecific <mark>O</mark>nline <mark>B</mark>usiness <mark>A</mark>ssignments</em>
+
+<small>Created to manage online presence</small>
+  
+</Center>
+
+![Soba noodles](https://static01.nyt.com/images/2016/07/19/dining/19COOKING-SOBANOODLES1/19COOKING-SOBANOODLES1-articleLarge.jpg)
+
+</Layout>
+
+---
+
+<Layout>
+
+### Enter: New careers page
+
+- Fix the infinitely scrolling posting list
+- Communicate company culture and perks
+- Long term: break out role and location showcases
+
+<ButtonLink href="https://onepeloton.com/company/careers">Old page</ButtonLink>
+
+</Layout>
+
+---
+
+<Layout>
+
+### Competitive analysis
+
+</Layout>  
+
+---
+
+<Layout>
+
+### Prioritize tasks
+
+- What's doable for a presentable MVP?
+- What are stretch goals we really want?
+
+<ButtonLink href="https://pelotoncycle.atlassian.net/secure/RapidBoard.jspa?rapidView=512&projectKey=SOBA">Kanban board</ButtonLink>
+
+</Layout>  
+
+---
+
+<Layout>
+
+## The mockups
+
+<Center>
+
+<ButtonLink href="https://app.zeplin.io/project/5d27523522ffa26aface8a7b/dashboard">View here</ButtonLink>
+
+</Center>
+
+</Layout>  
+
+---
+
+<Layout>
+
+## The demo
+
+</Layout>  
 
 ---
 
