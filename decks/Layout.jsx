@@ -102,7 +102,8 @@ export const ButtonLink = ({ children, href }) => (
         border-radius: 5px;
         padding: 17px 35px;
         color: #222;
-        transition: background-color 0.2s, color 0.2s;
+        transition-property: background-color, color, transform;
+        transition-duration: 0.2s;
         text-decoration: none;
         font-family: "brandon-grotesque";
         font-weight: bold;
@@ -110,9 +111,11 @@ export const ButtonLink = ({ children, href }) => (
         text-transform: uppercase;
         letter-spacing: 0.05em;
         margin-top: 50px;
+        cursor: pointer;
         &:hover {
           background-color: rgb(255, 51, 71);
           color: white;
+          transform: scale(1.1);
         }
       `}
       href={href}
