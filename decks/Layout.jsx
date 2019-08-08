@@ -31,7 +31,7 @@ export default ({ children }) => (
         img {
           margin: auto;
           margin-top: 30px;
-          max-height: 70vh;
+          max-height: 60vh;
           max-width: 50vw;
         }
         mark {
@@ -58,25 +58,26 @@ export default ({ children }) => (
         padding-bottom: 60px;
         flex-direction: column;
         justify-content: center;
+        max-height: 70vh;
       `}
     >
       {children}
-      <div
-        css={css`
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          padding: 10px 20px;
-          /* background: linear-gradient(45deg, black, #222); */
-          /* border-top: 1px solid rgb(255, 51, 71); */
-          display: flex;
-          justify-content: flex-end;
-        `}
-      >
-        <PelotonLogo />
-      </div>
     </section>
+    <div
+      css={css`
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 20px;
+        /* background: linear-gradient(45deg, black, #222); */
+        /* border-top: 1px solid rgb(255, 51, 71); */
+        display: flex;
+        justify-content: flex-end;
+      `}
+    >
+      <PelotonLogo />
+    </div>
   </>
 );
 
