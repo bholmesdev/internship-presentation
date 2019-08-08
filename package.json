@@ -8,7 +8,9 @@
     "surge": "^0.21.3"
   },
   "scripts": {
-    "start": "mdx-deck pages/deck.mdx",
-    "up": "mdx-deck build pages/deck.mdx && surge --project ./public --domain ben-internship-pres.surge.sh"
+    "start-intern": "mdx-deck decks/intern-pres-deck.mdx",
+    "start-careers-demo": "mdx-deck decks/careers-demo-deck.mdx",
+    "up-intern": "mdx-deck build decks/intern-pres-deck.mdx && surge --project ./public --domain ben-internship-pres.surge.sh",
+    "up-careers-demo": "mdx-deck build decks/careers-demo-deck.mdx && surge --project ./public --domain careers-page-demo.surge.sh"
   }
 }
